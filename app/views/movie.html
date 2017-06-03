@@ -1,0 +1,16 @@
+<h4>Wideo</h4>
+  <label data-ng-repeat="video in videos">
+      <input name="movieRadio" type="radio"  
+      value="{{video.id}}" ng-model="$parent.selectedVideo" />
+      <img src="images/movies/{{video.thumbnailName}}">
+      {{video.name}}
+  </label>
+  
+  <p>
+    <button class="btn btn-lg btn-success" ng-click="nextClick()">
+      <span class="glyphicon glyphicon-arrow-right"></span>
+    </button>
+  </p>
+
+
+      
