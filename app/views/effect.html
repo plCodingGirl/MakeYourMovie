@@ -3,7 +3,7 @@
     <div class="col-sm-3" data-ng-repeat="effect in effects | orderBy: 'name'">
         <label>
           <input name="effectRadio" type="radio"  
-      value="{{effect.id}}" ng-model="$parent.selectedEffect" />
+      ng-value="{{effect.id}}" ng-model="$parent.selectedEffect" />
       {{effect.name}}
       </label>
     </div>

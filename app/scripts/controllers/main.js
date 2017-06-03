@@ -10,12 +10,12 @@
 angular.module('filmikApp')
     .controller('MainCtrl', ['$scope', '$rootScope', '$location', 'mediaService', function($scope, $rootScope, $location, mediaService) {
 
+        $rootScope.selectedVideo = null;
+        $rootScope.selectedMusic = null;
+        $rootScope.selectedEffect = null;
+
         $scope.nextClick = function() {
-
-            $rootScope.selectedMusic = $scope.selectedMusic;
-
             $location.path('movie');
-            // BUG dasz, jak wybiorę nic, lub jedno/dwa, mogę kliknąć dalej 
         };
 
         $scope.randomClick = function() {

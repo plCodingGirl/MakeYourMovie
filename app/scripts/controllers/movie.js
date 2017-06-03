@@ -9,13 +9,16 @@
  */
 angular.module('filmikApp')
     .controller('MovieCtrl', ['$scope', '$rootScope', '$location', '$filter', 'mediaService', function($scope, $rootScope, $location, $filter, mediaService) {
-        $scope.selectedVideo = "";
         $scope.videos = mediaService.movies;
 
-        console.log(mediaService);
+        if ($rootScope.selectedVideo === null) {
+            $scope.selectedVideo = "";
+        } else {
+            $scope.selectedVideo = $rootScope.selectedVideo.id;
+        }
+
         $scope.nextClick = function() {
             $rootScope.selectedVideo = $filter('filter')($scope.videos, { id: $scope.selectedVideo })[0];
-
             $location.path('effect');
             // BUG dasz, jak wybiorę nic, lub jedno/dwa, mogę kliknąć dalej 
         };

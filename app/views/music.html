@@ -3,7 +3,7 @@
     <div class="col-sm-3" data-ng-repeat="music in musics | orderBy: 'name'">
         <label>
           <input name="musicRadio" type="radio"  
-          value="{{music.id}}" ng-model="$parent.selectedMusic" />
+          ng-value="{{music.id}}" ng-model="$parent.selectedMusic" />
           <span class="glyphicon glyphicon-play"></span>
           {{music.name}}
       </label>
