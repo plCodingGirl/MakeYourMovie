@@ -24,17 +24,15 @@ angular.module('filmikApp')
 
                     p.preload = function() {
                         song = p.loadSound('sounds/' + scope.music.fileName);
-                        video = p.createVideo(['videos/' + scope.video.fileName]);
                     };
 
                     p.setup = function() {
+                        video = p.createVideo(['videos/' + scope.video.fileName]);
                         p.createCanvas(700, 394);
-                        console.log(scope);
                         video.size(700, 394);
+                        video.hide();
                         video.loop();
                         song.loop();
-                        video.hide();
-                        console.log(video);
                     };
 
                     p.draw = function() {
