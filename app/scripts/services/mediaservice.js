@@ -11,18 +11,18 @@ angular.module('filmikApp')
     .service('mediaService', function() {
         // AngularJS will instantiate a singleton by calling "new" on this function
         this.movies = [
-            { id: 1, author: "BRoll.io (CC0)", fileName: "342466734 - BRoll.io - CC0.mp4", thumbnailName: "kawa.jpg" },
-            { id: 2, author: "lifeofvids (CC0)", fileName: "342933669 - lifeofvids - CC0.mp4", thumbnailName: "kaluza.jpg" },
-            { id: 3, author: "Life-Of-Vids (CC0)", fileName: "343378693 - Life-Of-Vids - CC0.mp4", thumbnailName: "komputer.jpg" },
-            { id: 4, author: "Oak & Rumble (CC0)", fileName: "343488880 - Oak & Rumble - CC0.mp4", thumbnailName: "las.jpg" },
-            { id: 5, author: "Distill (CC0)", fileName: "343637036 - Distill - CC0.mp4", thumbnailName: "bar.jpg" },
-            { id: 6, author: "Coverr (CC0)", fileName: "385124896 - Coverr - CC0.mp4", thumbnailName: "zarowka.jpg" },
-            { id: 7, author: "FreeWorld (CC0)", fileName: "Autumn - 1989 - FreeWorld - CC0.mp4", thumbnailName: "kwiaty.jpg" },
-            { id: 8, author: "Myriams-Fotos (CC0)", fileName: "Blueberries - 3924 - Myriams-Fotos - CC0.mp4", thumbnailName: "jagody.jpg" },
-            { id: 9, author: "keith_12345 (CC0)", fileName: "People - 4714 - keith_12345 - CC0.mp4", thumbnailName: "plaza.jpg" },
-            { id: 10, author: "KlausHausmann (CC0)", fileName: "Raspberries - 3777 - KlausHausmann - CC0.mp4", thumbnailName: "malina.jpg" },
-            { id: 11, author: "BenjaminNelan (CC0)", fileName: "Snail - 639 - BenjaminNelan - CC0.mp4", thumbnailName: "slimak.jpg" },
-            { id: 12, author: "Life-Of-Vids (CC0)", fileName: "Water - 990 - Life-Of-Vids - CC0.mp4", thumbnailName: "woda.jpg" },
+            { id: 1, author: "BRoll.io (CC0)", fileName: "342466734 - BRoll.io - CC0.mp4", thumbnailName: "kawa.jpg", name: "Kawa" },
+            { id: 2, author: "lifeofvids (CC0)", fileName: "342933669 - lifeofvids - CC0.mp4", thumbnailName: "kaluza.jpg", name: "Kałuża" },
+            { id: 3, author: "Life-Of-Vids (CC0)", fileName: "343378693 - Life-Of-Vids - CC0.mp4", thumbnailName: "komputer.jpg", name: "Komputer" },
+            { id: 4, author: "Oak & Rumble (CC0)", fileName: "343488880 - Oak & Rumble - CC0.mp4", thumbnailName: "las.jpg", name: "Las" },
+            { id: 5, author: "Distill (CC0)", fileName: "343637036 - Distill - CC0.mp4", thumbnailName: "bar.jpg", name: "Bar" },
+            { id: 6, author: "Coverr (CC0)", fileName: "385124896 - Coverr - CC0.mp4", thumbnailName: "zarowka.jpg", name: "Żarówka" },
+            { id: 7, author: "FreeWorld (CC0)", fileName: "Autumn - 1989 - FreeWorld - CC0.mp4", thumbnailName: "kwiaty.jpg", name: "Kwiaty" },
+            { id: 8, author: "Myriams-Fotos (CC0)", fileName: "Blueberries - 3924 - Myriams-Fotos - CC0.mp4", thumbnailName: "jagody.jpg", name: "Jagody" },
+            { id: 9, author: "keith_12345 (CC0)", fileName: "People - 4714 - keith_12345 - CC0.mp4", thumbnailName: "plaza.jpg", name: "Plaża" },
+            { id: 10, author: "KlausHausmann (CC0)", fileName: "Raspberries - 3777 - KlausHausmann - CC0.mp4", thumbnailName: "malina.jpg", name: "Malina" },
+            { id: 11, author: "BenjaminNelan (CC0)", fileName: "Snail - 639 - BenjaminNelan - CC0.mp4", thumbnailName: "slimak.jpg", name: "Ślimak" },
+            { id: 12, author: "Life-Of-Vids (CC0)", fileName: "Water - 990 - Life-Of-Vids - CC0.mp4", thumbnailName: "woda.jpg", name: "Woda" },
         ];
 
         this.music = [

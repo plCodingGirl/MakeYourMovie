@@ -19,10 +19,8 @@ angular.module('filmikApp')
                 };
 
                 var run = function(p) {
-                    var playing = true;
                     var video;
                     var song;
-                    var button;
 
                     p.preload = function() {
                         song = p.loadSound('sounds/' + scope.music.fileName);
@@ -32,28 +30,12 @@ angular.module('filmikApp')
                     p.setup = function() {
                         p.createCanvas(700, 394);
                         console.log(scope);
-                        button = p.createButton('pause');
                         video.size(700, 394);
                         video.loop();
                         song.loop();
-                        button.mousePressed(toggleVid); // attach button listener
                         video.hide();
                         console.log(video);
                     };
-
-                    var toggleVid = function() {
-                        if (playing) {
-                            video.pause();
-                            song.pause();
-                            button.html('play');
-                        } else {
-                            video.loop();
-                            song.loop();
-                            button.html('pause');
-                        }
-                        playing = !playing;
-                    };
-
 
                     p.draw = function() {
                         scope.effect.apply(p, video);

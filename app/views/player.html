@@ -2,17 +2,36 @@
   <source src="videos/{{selectedVideo.fileName}}" type="video/mp4">
   Your browser does not support the video tag.
 </video>-->
-<p5video id="player" video="selectedVideo" effect="selectedEffect" music="selectedMusic">
-</p5video>
+<div class="row">
+    <div class="col-md-12">
+        <p5video id="player" video="selectedVideo" effect="selectedEffect" music="selectedMusic">
+        </p5video>
+    </div>
+</div>
 
-<blockquote class="blockquote-reverse">
-    Wideo: {{selectedVideo}} <button class="btn btn-sm btn-primary" ng-click="goBackToMovie()">Zmień</button>
-</blockquote>
+<div class="row" style="text-align: center;">
+    <div class="col-sm-4">
+        <h4>Wideo</h4>
+        {{selectedVideo.name}}<br /> Autor: {{selectedVideo.author}} <br /><br />
+        <button class="btn btn-sm btn-primary" ng-click="goBackToMovie()">Zmień</button>
+    </div>
+    <div class="col-sm-4">
+        <h4>Efekt</h4>
+        {{selectedEffect.name}}<br />
+        <br /><br />
+        <button class="btn btn-sm btn-primary" ng-click="goBackToEffect()">Zmień</button>
+    </div>
+    <div class="col-sm-4">
+        <h4>Muzyka</h4>
+        {{selectedMusic.name}}<br /> Autor: {{selectedMusic.author}} <br /><br />
+        <button class="btn btn-sm btn-primary" ng-click="goBackToMusic()">Zmień</button>
+    </div>
+</div>
 
-<blockquote class="blockquote-reverse">
-    Efekt: {{selectedEffect}} <button class="btn btn-sm btn-primary" ng-click="goBackToEffect()">Zmień</button>
-</blockquote>
-
-<blockquote class="blockquote-reverse">
-    Muzyka: {{selectedMusic}} <button class="btn btn-sm btn-primary" ng-click="goBackToMusic()">Zmień</button>
-</blockquote>
+<div class="row marketing">
+    <div class="col-md-12">
+        <a class="btn btn-lg btn-info btn-block" href="#/">
+            <span class="glyphicon glyphicon-arrow-left"></span> Stwórz nowy film
+        </a>
+    </div>
+</div>

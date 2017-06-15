@@ -3,11 +3,12 @@
       <input name="movieRadio" type="radio"  
       ng-value="{{video.id}}" ng-model="$parent.selectedVideo" />
       <img src="images/movies/{{video.thumbnailName}}">
-      {{video.name}}
   </label>
 
-<p>
-    <button class="btn btn-lg btn-success" ng-click="nextClick()">
-      <span class="glyphicon glyphicon-arrow-right"></span>
-    </button>
-</p>
+<div class="row marketing">
+    <div class="col-md-12">
+        <button class="btn btn-lg btn-success btn-block" ng-click="nextClick()">
+          <span class="glyphicon glyphicon-arrow-right"></span> Dalej
+        </button>
+    </div>
+</div>

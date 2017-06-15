@@ -21,14 +21,12 @@ body {
 
 #player {
     display: block;
-    border: 1px solid #000;
 }
 
 
 /* Custom page header */
 
 .header {
-    border-bottom: 1px solid #e5e5e5;
     margin-bottom: 10px;
 }
 
@@ -46,6 +44,7 @@ body {
 /* Custom page footer */
 
 .footer {
+    margin-top: 20px;
     padding-top: 19px;
     color: #777;
     border-top: 1px solid #e5e5e5;
@@ -61,6 +60,8 @@ body {
 .jumbotron {
     text-align: center;
     border-bottom: 1px solid #e5e5e5;
+    background: url('../images/banner.jpg');
+    height: 300px;
 }
 
 .jumbotron .btn {
