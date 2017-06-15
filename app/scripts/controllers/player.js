@@ -8,10 +8,16 @@
  * Controller of the filmikApp
  */
 angular.module('filmikApp')
-    .controller('PlayerCtrl', ['$scope', '$rootScope', '$location', function($scope, $rootScope, $location) {
+    .controller('PlayerCtrl', ['$scope', '$rootScope', '$location', 'Backand', function($scope, $rootScope, $location, Backand) {
         $scope.selectedVideo = $rootScope.selectedVideo;
         $scope.selectedEffect = $rootScope.selectedEffect;
         $scope.selectedMusic = $rootScope.selectedMusic;
+
+        Backand.object.create('stats', {
+            "movie": $scope.selectedVideo.id,
+            "effect": $scope.selectedEffect.id,
+            "music": $scope.selectedMusic.id
+        });
 
         $scope.goBackToMovie = function() {
             $location.path('movie');

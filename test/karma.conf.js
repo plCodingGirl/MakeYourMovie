@@ -32,6 +32,8 @@ module.exports = function(config) {
       'bower_components/p5.js/lib/p5.min.js',
       'bower_components/p5.js/lib/addons/p5.dom.min.js',
       'bower_components/p5.js/lib/addons/p5.sound.min.js',
+      'bower_components/backand-vanilla-sdk/dist/backand.js',
+      'bower_components/backand-angular1-sdk/dist/backand.provider.js',
       'bower_components/angular-mocks/angular-mocks.js',
       // endbower
       'app/scripts/**/*.js',

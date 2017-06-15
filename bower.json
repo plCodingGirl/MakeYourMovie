@@ -1,36 +1,40 @@
 {
-    "name": "filmik",
-    "version": "0.0.0",
-    "dependencies": {
-        "angular": "^1.4.0",
-        "bootstrap": "^3.2.0",
-        "angular-animate": "^1.4.0",
-        "angular-cookies": "^1.4.0",
-        "angular-resource": "^1.4.0",
-        "angular-route": "^1.4.0",
-        "angular-sanitize": "^1.4.0",
-        "angular-touch": "^1.4.0",
-        "p5.js": "p5js#^0.5.8"
+  "name": "filmik",
+  "version": "0.0.0",
+  "dependencies": {
+    "angular": "^1.4.0",
+    "bootstrap": "^3.2.0",
+    "angular-animate": "^1.4.0",
+    "angular-cookies": "^1.4.0",
+    "angular-resource": "^1.4.0",
+    "angular-route": "^1.4.0",
+    "angular-sanitize": "^1.4.0",
+    "angular-touch": "^1.4.0",
+    "p5.js": "p5js#^0.5.8",
+    "backand-angular1-sdk": "^2.0.4"
+  },
+  "devDependencies": {
+    "angular-mocks": "^1.4.0"
+  },
+  "appPath": "app",
+  "moduleName": "filmikApp",
+  "overrides": {
+    "p5.js": {
+      "main": [
+        "lib/p5.min.js",
+        "lib/addons/p5.dom.min.js",
+        "lib/addons/p5.sound.min.js"
+      ]
     },
-    "devDependencies": {
-        "angular-mocks": "^1.4.0"
-    },
-    "appPath": "app",
-    "moduleName": "filmikApp",
-    "overrides": {
-        "p5.js": {
-            "main": [
-                "lib/p5.min.js",
-                "lib/addons/p5.dom.min.js",
-                "lib/addons/p5.sound.min.js"
-            ]
-        },
-        "bootstrap": {
-            "main": [
-                "less/bootstrap.less",
-                "dist/css/bootstrap.css",
-                "dist/js/bootstrap.js"
-            ]
-        }
+    "bootstrap": {
+      "main": [
+        "less/bootstrap.less",
+        "dist/css/bootstrap.css",
+        "dist/js/bootstrap.js"
+      ]
     }
+  },
+  "resolutions": {
+    "angular": "^1.4.0"
+  }
 }
