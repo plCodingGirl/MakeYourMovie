@@ -19,7 +19,6 @@ angular.module('filmikApp')
             }
             $scope.nextClick = function() {
                 $rootScope.selectedMusic = $filter('filter')($scope.musics, { id: $scope.selectedMusic })[0];
-
                 $location.path('player');
             };
         }

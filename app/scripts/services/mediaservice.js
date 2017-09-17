@@ -51,7 +51,6 @@ angular.module('filmikApp')
         this.effects = [{
                 id: 1,
                 name: "Brak",
-                thumbnailName: "yeoman.png",
                 apply: function(p, video) {
                     p.image(video, 0, 0);
                 }
@@ -59,7 +58,6 @@ angular.module('filmikApp')
             {
                 id: 2,
                 name: "Czarno-białe",
-                thumbnailName: "yeoman1.png",
                 apply: function(p, video) {
                     p.image(video, 0, 0);
                     p.filter('GRAY');
@@ -68,7 +66,6 @@ angular.module('filmikApp')
             {
                 id: 3,
                 name: "Sepia",
-                thumbnailName: "yeoman2.png",
                 apply: function(p, video) {
                     p.image(video, 0, 0);
                     var c = p.color('rgba(112, 66, 20, 0.4)');
@@ -85,7 +82,7 @@ angular.module('filmikApp')
                     p.image(video, 0, 0);
                     var c = p.color('rgba(9, 56, 66, 0.4)');
                     p.fill(c);
-                    p.stroke(0); // TODO stroke nie znika
+                    p.stroke(0);
                     p.rect(0, 0, video.width, video.height);
                     p.fill(0);
                     p.rect(0, 0, video.width, 47);
@@ -95,36 +92,33 @@ angular.module('filmikApp')
             {
                 id: 5,
                 name: "Niebieski",
-                thumbnailName: "yeoman2.png",
                 apply: function(p, video) {
                     p.image(video, 0, 0);
                     var c = p.color('rgba(0, 0, 255, 0.2)');
                     p.fill(c);
-                    p.stroke(0); // TODO stroke nie znika
+                    p.stroke(0);
                     p.rect(0, 0, video.width, video.height);
                 }
             },
             {
                 id: 6,
                 name: "Czerwony",
-                thumbnailName: "yeoman2.png",
                 apply: function(p, video) {
                     p.image(video, 0, 0);
                     var c = p.color('rgba(255, 0, 0, 0.15)');
                     p.fill(c);
-                    p.stroke(0); // TODO stroke nie znika
+                    p.stroke(0);
                     p.rect(0, 0, video.width, video.height);
                 }
             },
             {
                 id: 7,
                 name: "Zielony",
-                thumbnailName: "yeoman2.png",
                 apply: function(p, video) {
                     p.image(video, 0, 0);
                     var c = p.color('rgba(0, 255, 0, 0.15)');
                     p.fill(c);
-                    p.stroke(0); // TODO stroke nie znika
+                    p.stroke(0);
                     p.rect(0, 0, video.width, video.height);
                 }
             },

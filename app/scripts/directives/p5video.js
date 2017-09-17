@@ -62,7 +62,6 @@ angular.module('filmikApp')
                 scope.$on('$destroy', function() {
                     destroy();
                 });
-            },
-            //template: "<div id=\"player\"></div>" // TODO dodać ładne guziczki do templatki
+            }
         };
     }]);

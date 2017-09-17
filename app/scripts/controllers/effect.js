@@ -20,7 +20,6 @@ angular.module('filmikApp')
 
             $scope.nextClick = function() {
                 $rootScope.selectedEffect = $filter('filter')($scope.effects, { id: $scope.selectedEffect })[0];
-
                 $location.path('music');
             };
         }

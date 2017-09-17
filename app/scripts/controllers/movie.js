@@ -20,6 +20,5 @@ angular.module('filmikApp')
         $scope.nextClick = function() {
             $rootScope.selectedVideo = $filter('filter')($scope.videos, { id: $scope.selectedVideo })[0];
             $location.path('effect');
-            // BUG dasz, jak wybiorę nic, lub jedno/dwa, mogę kliknąć dalej 
         };
     }]);
