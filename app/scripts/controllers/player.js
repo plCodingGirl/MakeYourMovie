@@ -13,11 +13,12 @@ angular.module('filmikApp')
         $scope.selectedEffect = $rootScope.selectedEffect;
         $scope.selectedMusic = $rootScope.selectedMusic;
 
-        Backand.object.create('stats', {
-            "movie": $scope.selectedVideo.id,
-            "effect": $scope.selectedEffect.id,
-            "music": $scope.selectedMusic.id
-        });
+        // Backand is not working anymore
+        // Backand.object.create('stats', {
+        //     "movie": $scope.selectedVideo.id,
+        //     "effect": $scope.selectedEffect.id,
+        //     "music": $scope.selectedMusic.id
+        // });
 
         $scope.goBackToMovie = function() {
             $location.path('movie');
